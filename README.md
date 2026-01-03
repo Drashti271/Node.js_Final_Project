@@ -56,6 +56,9 @@ npm start
 
 Server runs at: http://localhost:3000
 
+Recipe List 
+<img width="1592" height="531" alt="image" src="https://github.com/user-attachments/assets/1b933fe4-f2d2-4322-aafd-04ef4b117b32" />
+
 ## Features
 
 -   User Registration & Login
