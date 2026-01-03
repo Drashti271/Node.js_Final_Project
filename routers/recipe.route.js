@@ -10,6 +10,6 @@ recipeRouter.get('/viewRecipe',viewRecipe);
 
 recipeRouter.get('/deleteRecipe/:id',deleteRecipe);
 
-recipeRouter.get('/editRecipe/:id',imageUpload,editRecipe);
+recipeRouter.post('/editRecipe/:id',imageUpload,editRecipe);
 
 export default recipeRouter;

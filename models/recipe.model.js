@@ -2,8 +2,7 @@ import mongoose from "mongoose";
 
 const recipeSchema = new mongoose.Schema({
     image : {
-        type : String,
-        required : true
+        type : String
     },
     name : {
         type : String,
