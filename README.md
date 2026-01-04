@@ -7,6 +7,12 @@ and EJS. Users can register, log in, and share their favorite recipes
 with others. The platform includes features for uploading images, adding
 recipes, viewing all recipes, and managing user roles.
 
+Default Login/Signup Process :
+
+Username : Admin
+Email : admin@gmail.com
+Password : 123
+
 ## Project Structure
 
     NODE.JS_FINAL_PROJECT
