@@ -3,6 +3,10 @@ import userRouter from "../routers/user.route.js"
 import recipeRouter from "./recipe.route.js";
 const router = Router();
 
+router.get('/', (req, res) => {
+    return res.redirect('/register');
+});
+
 router.use('/',userRouter);
 router.use('/',recipeRouter);
 

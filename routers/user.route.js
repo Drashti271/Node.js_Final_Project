@@ -1,11 +1,21 @@
-import { Router } from "express";
-import { dashboard, login, loginPage, registerPage } from "../controllers/user.controller.js";
 
+import { Router } from "express";
+import { dashboard, registerPage, register, login, loginPage, logout } from "../controllers/user.controller.js";
+import userAuth from "../middlewares/userAuth.middleware.js";
 const userRouter = Router();
 
-userRouter.get('/',dashboard);
+// Register
+userRouter.get('/register',registerPage);
+userRouter.post('/register',register);
+
+// Login
 userRouter.get('/login',loginPage);
 userRouter.post('/login',login);
-userRouter.get('/register',registerPage);
+
+// DashBoard
+userRouter.get('/dashboard',userAuth,dashboard);
+
+// Logout
+userRouter.get('/logout',logout);
 
 export default userRouter;
